@@ -1,16 +1,18 @@
-import { Bars3Icon } from "@heroicons/react/16/solid";
-import { useState } from "react";
+//  Import the Bars3Icon from heroicons
+import { Bars3Icon } from "@heroicons/react/16/solid"; // Icon from heroicons.com
+import { useState } from "react"; // React hook for state
 
-
+// Define the Header component
 export default function Header () {
-
+    // State to track whether the mobile menu is open or closed
     const [ toggleMenu , setToggleMenu ] = useState (false);
 
     return <header className= "flex justify-between px-5 py-2 bg-primary">
-        
+         {/* Website title or logo */}
         <a className="font-bold text-black" href="#">
             Bhavani Ambrose
         </a>
+        {/* Desktop navigation menu */}
         <nav className="hidden md:block">
             <ul className="flex text-white">
                 <li><a href="#">Home</a></li>
@@ -19,7 +21,7 @@ export default function Header () {
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-
+        {/* Mobile navigation menu (visible when toggleMenu is true) */}
         {toggleMenu && (
         <nav className="block md:hidden">
             <ul className="flex flex-col text-white mobile-nav">
@@ -30,7 +32,7 @@ export default function Header () {
             </ul>
         </nav>
         )}
-
+        {/* Bar icon button (toggles mobile menu) */}
         <button
             onClick= {() => setToggleMenu(!toggleMenu)}
             className="block md:hidden">
