@@ -6,9 +6,12 @@ header ul li {
     @apply px-2;
 }
 
+.bg-primary {
+    background: rgb(164, 162, 206);
+}
 
-.bg-primary{
-    background: #0ea5e9;
+.bg-secondary {
+    background: rgb(253, 253, 253);
 }
 
 .mobile-nav {
