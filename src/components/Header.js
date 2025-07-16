@@ -1,5 +1,5 @@
 //  Import the Bars3Icon from heroicons
-import { Bars3Icon } from "@heroicons/react/16/solid"; // Icon from heroicons.com
+import { Bars3Icon } from "@heroicons/react/24/solid"; // Icon from heroicons.com
 import { useState } from "react"; // React hook for state
 
 // Define the Header component
@@ -9,7 +9,7 @@ export default function Header () {
 
     return <header className= "flex justify-between px-5 py-2 bg-primary">
          {/* Website title or logo */}
-        <a className="font-bold text-black" href="#">
+        <a className="font-bold text-black hover:text-white transition" href="#">
             Bhavani Ambrose
         </a>
         {/* Desktop navigation menu */}
