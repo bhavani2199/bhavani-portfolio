@@ -13,3 +13,8 @@ header ul li {
 .mobile-nav li {
   @apply w-full h-full text-center border-b-2;
 }
+
+.fade-bottom {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
