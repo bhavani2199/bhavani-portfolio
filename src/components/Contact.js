@@ -2,9 +2,12 @@ import ResumeImg from "../assets/resume.png";
 
 function Contact() {
   return (
-    <section className="flex flex-col bg-[#B59CCB] px-5 py-20 md:py-32 ">
+    <section
+      id="contact"
+      className="flex flex-col bg-[#B59CCB] px-5 py-16 md:py-32 "
+    >
       <div className="flex flex-col items-center md:pr-10">
-        <h1 className=" text-4xl border-b-4 border-[#4B3364] mb-5 w-[140px] font-bold ">
+        <h1 className=" text-4xl border-b-4 border-[#572b86] mb-5 w-[140px] font-bold ">
           Contact
         </h1>
         <p className="pb-5">

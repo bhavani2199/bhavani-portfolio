@@ -2,7 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <section className=" py-2 bg-[#674d83] text-center text-white">
+    <section
+      id="projects"
+      className=" py-2 bg-[#674d83] text-center text-white"
+    >
       <div className="flex justify-center items-center space-x-4 mt-1">
         <a
           href="https://github.com/bhavani2199"
