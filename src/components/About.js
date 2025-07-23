@@ -2,14 +2,17 @@ import AboutImg from "../assets/about.png";
 
 function About() {
   return (
-    <section className="flex flex-col md:flex-row bg-[#E5DFF0] px-5 py-5 items-center">
+    <section
+      id="about"
+      className="flex flex-col md:flex-row bg-[#E5DFF0] px-5 py-5 items-center"
+    >
       <div className="md:w-1/2 flex justify-center items-center py-5">
         <img src={AboutImg} alt="Illustration of a woman coding on a laptop" />
       </div>
 
       <div className="md:w-1/2 flex justify-center md:pr-10">
         <div className="flex flex-col justify-center max-w-xl">
-          <h1 className="text-4xl border-b-4 border-white mb-5 w-[180px] font-bold ">
+          <h1 className="text-4xl border-b-4 border-[#572b86] mb-5 w-[180px] font-bold ">
             About Me
           </h1>
           <p className="pb-5">

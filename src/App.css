@@ -32,3 +32,7 @@ header ul li {
 .btn-resume {
   @apply bg-[#5E4B78] text-white px-5 py-2 font-bold hover:border-2 border-white rounded;
 }
+
+html {
+  scroll-behavior: smooth;
+}
