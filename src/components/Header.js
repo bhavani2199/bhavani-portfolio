@@ -26,6 +26,9 @@ function Header() {
             <a href="#">Projects</a>
           </li>
           <li>
+            <a href="#">Resume</a>
+          </li>
+          <li>
             <a href="#">Contact</a>
           </li>
         </ul>
@@ -42,6 +45,9 @@ function Header() {
             </li>
             <li>
               <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Resume</a>
             </li>
             <li>
               <a href="#">Contact</a>
