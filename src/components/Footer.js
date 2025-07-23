@@ -23,9 +23,6 @@ function Footer() {
         </a>
       </div>
       <div className="space-x-4 m-2">
-        <a href="#" className="hover:underline">
-          Home
-        </a>
         <a href="#about" className="hover:underline">
           About
         </a>
@@ -43,7 +40,7 @@ function Footer() {
         ↑ Back to top
       </a>
       <p className="italic text-sm m-1 text-[#D7CDE5]">
-        Built with 💜 by Bhavani A/P Ambrose
+        Built with 💜 by Bhavani Ambrose
       </p>
       <div className="text-sm">&copy; BAcode 2025</div>
     </section>

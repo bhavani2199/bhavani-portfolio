@@ -36,7 +36,10 @@ function Header() {
       {/* Mobile navigation menu (visible when toggleMenu is true) */}
       {toggleMenu && (
         <nav className="block md:hidden">
-          <ul className="flex flex-col text-white mobile-nav">
+          <ul
+            onClick={() => setToggleMenu(!toggleMenu)}
+            className="flex flex-col text-white mobile-nav"
+          >
             <li>
               <a href="/">Home</a>
             </li>
