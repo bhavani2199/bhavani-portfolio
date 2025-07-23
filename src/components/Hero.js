@@ -16,13 +16,28 @@ function Hero() {
           Aspiring Front-end developer
         </p>
         <div className="flex space-x-6 py-6">
-          <a href="#" className="hover:text-[#0077b5] transition-all">
+          <a
+            href="https://www.linkedin.com/in/bhavani-ambrose/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#0077b5] transition-all"
+          >
             <FaLinkedin size={35} />
           </a>
-          <a href="#" className="hover:text-gray-800 transition-all">
+          <a
+            href="https://github.com/bhavani2199"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-800 transition-all"
+          >
             <FaGithub size={35} />
           </a>
-          <a href="#" className="hover:text-[#D44638] transition-all">
+          <a
+            href="mailto:bhavaniambrose2199@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#D44638] transition-all"
+          >
             <SiGmail size={35} />
           </a>
         </div>
