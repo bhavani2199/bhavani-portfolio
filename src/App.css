@@ -18,3 +18,13 @@ header ul li {
   mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
+
+.project-overlay {
+  @apply relative overflow-hidden rounded-lg shadow-md h-[200px];
+}
+
+.project-text {
+  @apply absolute inset-0 bg-[#5E4B78]/90 opacity-0 
+  transition-opacity duration-300 flex items-center 
+  justify-center text-center p-4;
+}
