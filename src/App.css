@@ -24,7 +24,11 @@ header ul li {
 }
 
 .project-text {
-  @apply absolute inset-0 bg-[#5E4B78]/90 opacity-0 
-  transition-opacity duration-300 flex items-center 
+  @apply absolute inset-0 bg-[#5E4B78]/90 opacity-0
+  transition-opacity duration-300 flex items-center
   justify-center text-center p-4;
+}
+
+.btn-resume {
+  @apply bg-[#5E4B78] text-white px-5 py-2 font-bold hover:border-2 border-white rounded;
 }
