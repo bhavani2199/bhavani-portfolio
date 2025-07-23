@@ -4,7 +4,7 @@ function About() {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row bg-[#E5DFF0] px-5 py-5 items-center"
+      className="flex flex-col md:flex-row bg-[#E5DFF0] px-5 py-5 pb-10 items-center"
     >
       <div className="md:w-1/2 flex justify-center items-center py-5">
         <img src={AboutImg} alt="Illustration of a woman coding on a laptop" />

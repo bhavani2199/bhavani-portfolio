@@ -10,7 +10,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <title>Bhavani Portfolio</title>
       <Header />
       <Hero />
       <About />
