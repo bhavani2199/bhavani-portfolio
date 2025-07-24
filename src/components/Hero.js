@@ -3,6 +3,15 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 function Hero() {
+  const config = {
+    subtitle: "Aspiring Front-end developer",
+    social: {
+      linkedin: "https://www.linkedin.com/in/bhavani-ambrose/",
+      github: "https://github.com/bhavani2199",
+      gmail: "mailto:bhavaniambrose2199@gmail.com",
+    },
+  };
+
   return (
     <section className="flex flex-col md:flex-row items-center px-3 py-14 bg-[#F4F0F8] justify-center">
       <div className="md:w-1/2 font-hero-font px-4 py-5 bg-white/80 rounded-xl shadow-md">
@@ -13,11 +22,11 @@ function Hero() {
           </span>
         </h1>
         <p className="text-xl md:text-2xl py-3 text-gray-700">
-          Aspiring Front-end developer
+          {config.subtitle}
         </p>
         <div className="flex space-x-6 py-6">
           <a
-            href="https://www.linkedin.com/in/bhavani-ambrose/"
+            href={config.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#0077b5] transition-all"
@@ -25,7 +34,7 @@ function Hero() {
             <FaLinkedin size={35} />
           </a>
           <a
-            href="https://github.com/bhavani2199"
+            href={config.social.github}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-800 transition-all"
@@ -33,7 +42,7 @@ function Hero() {
             <FaGithub size={35} />
           </a>
           <a
-            href="mailto:bhavaniambrose2199@gmail.com"
+            href={config.social.gmail}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#D44638] transition-all"

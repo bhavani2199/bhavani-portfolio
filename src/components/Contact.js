@@ -1,6 +1,9 @@
-import ResumeImg from "../assets/resume.png";
-
 function Contact() {
+  const config = {
+    email: "bhavaniambrose2199@gmail.com",
+    phone: "012-5475767",
+  };
+
   return (
     <section
       id="contact"
@@ -23,17 +26,12 @@ function Contact() {
             href="mailto:bhavaniambrose2199@gmail.com"
             className="underline hover:text-[#E5DFF0] text-white"
           >
-            bhavaniambrose2199@gmail.com
+            {config.email}
           </a>
         </p>
         <p className="py-2">
           <span className="font-bold ">Phone : </span>
-          <a
-            href="tel:+60125475767"
-            className="underline hover:text-[#E5DFF0] text-white"
-          >
-            012-5475767
-          </a>
+          <a className="text-white">{config.phone}</a>
         </p>
       </div>
     </section>

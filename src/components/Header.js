@@ -10,26 +10,39 @@ function Header() {
   return (
     <header className="flex justify-between px-5 py-2 bg-[#9983AF]">
       {/* Website title or logo */}
-      <a className="font-bold text-black hover:text-white transition" href="#">
+      <a
+        className="font-bold text-black hover:text-white transition"
+        href="#about"
+      >
         Bhavani Ambrose
       </a>
       {/* Desktop navigation menu */}
       <nav className="hidden md:block">
         <ul className="flex text-white">
           <li>
-            <a href="/">Home</a>
+            <a href="/" className="hover:underline">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" className="hover:underline">
+              About
+            </a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" className="hover:underline">
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href="#resume" className="hover:underline">
+              Resume
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
@@ -41,19 +54,29 @@ function Header() {
             className="flex flex-col text-white mobile-nav"
           >
             <li>
-              <a href="/">Home</a>
+              <a href="/" className="hover:underline">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" className="hover:underline">
+                About
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" className="hover:underline">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#resume" className="hover:underline">
+                Resume
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" className="hover:underline">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
@@ -61,9 +84,9 @@ function Header() {
       {/* Bar icon button (toggles mobile menu) */}
       <button
         onClick={() => setToggleMenu(!toggleMenu)}
-        className="block md:hidden"
+        className="block md:hidden "
       >
-        <Bars3Icon className="text-white h-5" />
+        <Bars3Icon className="text-white h-5 hover:text-black" />
       </button>
     </header>
   );
