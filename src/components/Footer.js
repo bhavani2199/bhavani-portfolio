@@ -1,6 +1,13 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
+  const config = {
+    social: {
+      github: "https://github.com/bhavani2199",
+      linkedin: "https://www.linkedin.com/in/bhavaniambrose",
+    },
+  };
+
   return (
     <section
       id="projects"
@@ -8,14 +15,14 @@ function Footer() {
     >
       <div className="flex justify-center items-center space-x-4 mt-1">
         <a
-          href="https://github.com/bhavani2199"
+          href={config.social.github}
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub className="text-white hover:text-black text-xl" />
         </a>
         <a
-          href="https://www.linkedin.com/in/bhavaniambrose"
+          href={config.social.linkedin}
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,6 +1,10 @@
 import ResumeImg from "../assets/resume.png";
 
 function Resume() {
+  const config = {
+    link: "/assets/Bhavani-Resume.pdf",
+  };
+
   return (
     <section
       id="resume"
@@ -22,7 +26,7 @@ function Resume() {
           </h1>
           <p className="pb-5">
             You can view my resume{" "}
-            <a className="btn-resume" href="#">
+            <a className="btn" href={config.link} download="Bhavani-Resume.pdf">
               Download
             </a>
           </p>

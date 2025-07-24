@@ -1,6 +1,15 @@
 import AboutImg from "../assets/about.png";
 
 function About() {
+  const config = {
+    para1:
+      " Hi, I'm Bhavani Ambrose, a passionate Front-End Developer. I enjoy building responsive and user-friendly web interfaces using React,JavaScript and Tailwind CSS.",
+    para2:
+      "I'm currently upskilling through the Meta Front-End Developer Certificate and working on real-world projects to sharpen my skills.",
+    para3:
+      "I'm developing proficiency in Redux, Redux toolkit, Axios, Tailwind CSS and version control.",
+  };
+
   return (
     <section
       id="about"
@@ -15,19 +24,9 @@ function About() {
           <h1 className="text-4xl border-b-4 border-[#572b86] mb-5 w-[180px] font-bold ">
             About Me
           </h1>
-          <p className="pb-5">
-            Hi, I'm Bhavani Ambrose, a passionate Front-End Developer. I enjoy
-            building responsive and user-friendly web interfaces using React,
-            JavaScript and Tailwind CSS.
-          </p>
-          <p className="pb-5">
-            I'm currently upskilling through the Meta Front-End Developer
-            Certificate and working on real-world projects to sharpen my skills.
-          </p>
-          <p>
-            I'm developing proficiency in Redux, Redux toolkit, Axios, Tailwind
-            CSS and version control.
-          </p>
+          <p className="pb-5">{config.para1}</p>
+          <p className="pb-5">{config.para2}</p>
+          <p>{config.para3}</p>
         </div>
       </div>
     </section>
