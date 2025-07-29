@@ -5,7 +5,6 @@ import netflixclone from "../assets/netflix clone.jpg";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
-
 function Projects() {
   const config = {
     projects: [
@@ -41,8 +40,6 @@ function Projects() {
   //   ],
   // };
 
-
-
   return (
     <section
       id="projects"
@@ -57,7 +54,6 @@ function Projects() {
           CSS. Check them out.
         </p>
       </div>
-
       {/* <Slider {...settings}> */}
       {config.projects.map((project, index) => (
         <div key={index} className="px-5">
@@ -84,7 +80,6 @@ function Projects() {
         </div>
       ))}
       {/* </Slider> */}
-
     </section>
   );
 }
