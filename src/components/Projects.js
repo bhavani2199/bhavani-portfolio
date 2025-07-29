@@ -1,43 +1,47 @@
 import netflixclone from "../assets/netflix clone.jpg";
-import blogwebsite from "../assets/blog website.jpg";
-import ecommerce from "../assets/ecommerce.jpg";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import blogwebsite from "../assets/blog website.jpg";
+// import ecommerce from "../assets/ecommerce.jpg";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 
 function Projects() {
   const config = {
     projects: [
       {
         image: netflixclone,
-        description: "Netflix Clone Website, built with React and Firebase.",
-        link: "https://github.com/bhavani2199/Netflix-clone.git",
-      },
-      {
-        image: blogwebsite,
         description:
-          "Modern Blog Website, built with React, Redux and Tailwind CSS.",
-        link: "",
+          "Netflix Clone Website built with React and deployed on Netlify.",
+        link: "https://shiny-liger-2cb658.netlify.app/",
       },
-      {
-        image: ecommerce,
-        description: "Ecommerce Website, built with MERN Stack.",
-        link: "",
-      },
+      // {
+      //   image: blogwebsite,
+      //   description:
+      //     "Modern Blog Website, built with React, Redux and Tailwind CSS.",
+      //   link: "",
+      // },
+      // {
+      //   image: ecommerce,
+      //   description: "Ecommerce Website, built with MERN Stack.",
+      //   link: "",
+      // },
     ],
   };
 
-  const settings = {
-    slidesToShow: 2, // show 2 on desktop
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1, // show 1 on mobile
-        },
-      },
-    ],
-  };
+  // const settings = {
+  //   slidesToShow: 2, // show 2 on desktop
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1, // show 1 on mobile
+  //       },
+  //     },
+  //   ],
+  // };
+
+
 
   return (
     <section
@@ -49,36 +53,38 @@ function Projects() {
           Projects
         </h1>
         <p className="mt-5">
-          These are some of my projects. I have built these with React, MERN,
-          Redux and Tailwind CSS. Check them out.
+          Here is my project. I have built this with React, JavaScript, HTML and
+          CSS. Check them out.
         </p>
       </div>
-      <Slider {...settings}>
-        {config.projects.map((project, index) => (
-          <div key={index} className="px-5">
-            <div className="project-overlay group">
-              <img
-                src={project.image}
-                alt={project.description}
-                className="w-full h-full object-cover"
-              />
-              <div className="project-text group-hover:opacity-100">
-                <div>
-                  <p className="mb-4">{project.description}</p>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn bg-[#572b86] px-4 py-2 rounded hover:bg-[#6d3ea1] transition"
-                  >
-                    View Project
-                  </a>
-                </div>
+
+      {/* <Slider {...settings}> */}
+      {config.projects.map((project, index) => (
+        <div key={index} className="px-5">
+          <div className="project-overlay group">
+            <img
+              src={project.image}
+              alt={project.description}
+              className="w-full h-full object-cover"
+            />
+            <div className="project-text group-hover:opacity-100">
+              <div>
+                <p className="mb-4">{project.description}</p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn bg-[#572b86] px-4 py-2 rounded hover:bg-[#6d3ea1] transition"
+                >
+                  View Project
+                </a>
               </div>
             </div>
           </div>
-        ))}
-      </Slider>
+        </div>
+      ))}
+      {/* </Slider> */}
+
     </section>
   );
 }
