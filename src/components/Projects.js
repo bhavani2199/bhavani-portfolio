@@ -1,8 +1,45 @@
 import netflixclone from "../assets/netflix clone.jpg";
-import blogwebsite from "../assets/blog website.jpg";
-import ecommerce from "../assets/ecommerce.jpg";
+// import blogwebsite from "../assets/blog website.jpg";
+// import ecommerce from "../assets/ecommerce.jpg";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 function Projects() {
+  const config = {
+    projects: [
+      {
+        image: netflixclone,
+        description:
+          "Netflix Clone Website built with React and deployed on Netlify.",
+        link: "https://shiny-liger-2cb658.netlify.app/",
+      },
+      // {
+      //   image: blogwebsite,
+      //   description:
+      //     "Modern Blog Website, built with React, Redux and Tailwind CSS.",
+      //   link: "",
+      // },
+      // {
+      //   image: ecommerce,
+      //   description: "Ecommerce Website, built with MERN Stack.",
+      //   link: "",
+      // },
+    ],
+  };
+
+  // const settings = {
+  //   slidesToShow: 2, // show 2 on desktop
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 1, // show 1 on mobile
+  //       },
+  //     },
+  //   ],
+  // };
+
   return (
     <section className="flex flex-col py-10 px-5 bg-[#F3EFF5]">
       <div className="px-5 mb-10">
@@ -10,47 +47,37 @@ function Projects() {
           Projects
         </h1>
         <p className="mt-5">
-          These are some of my projects. I have built these with React, MERN,
-          Redux and Tailwind CSS. Check them out.
+          Here is my project. I have built this with React, JavaScript, HTML and
+          CSS. Check them out.
         </p>
         <p></p>
       </div>
-      <div div className=" text-white">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 text-white">
+      {/* <Slider {...settings}> */}
+      {config.projects.map((project, index) => (
+        <div key={index} className="px-5">
           <div className="project-overlay group">
             <img
+              src={project.image}
+              alt={project.description}
               className="w-full h-full object-cover"
-              src={netflixclone}
-              alt="Netflix Clone"
             />
             <div className="project-text group-hover:opacity-100">
-              <p>Netflix Clone Website, built with React and Firebase.</p>
-            </div>
-          </div>
-          <div className="project-overlay group">
-            <img
-              className="w-full h-full oject-cover"
-              src={blogwebsite}
-              alt="Blog Website"
-            />
-            <div className="project-text group-hover:opacity-100">
-              <p>
-                Modern Blog Website, built with React, Redux and Tailwind CSS.
-              </p>
-            </div>
-          </div>
-          <div className="project-overlay group">
-            <img
-              className="w-full h-full object-cover"
-              src={ecommerce}
-              alt="Ecommerce Website"
-            />
-            <div className="project-text group-hover:opacity-100">
-              <p>Ecommerce Website, built with MERN Stack.</p>
+              <div>
+                <p className="mb-4">{project.description}</p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn bg-[#572b86] px-4 py-2 rounded hover:bg-[#6d3ea1] transition"
+                >
+                  View Project
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ))}
+      {/* </Slider> */}
     </section>
   );
 }
