@@ -2,7 +2,7 @@ import ResumeImg from "../assets/resume.png";
 
 function Resume() {
   const config = {
-    link: "/assets/Bhavani-Resume.pdf",
+    link: "/assets/BHAVANI AMBROSE CV.pdf",
   };
 
   return (
@@ -26,7 +26,11 @@ function Resume() {
           </h1>
           <p className="pb-5">
             You can view my resume{" "}
-            <a className="btn" href={config.link} download="Bhavani-Resume.pdf">
+            <a
+              className="btn"
+              href={config.link}
+              download="BHAVANI AMBROSE CV.pdf"
+            >
               Download
             </a>
           </p>
