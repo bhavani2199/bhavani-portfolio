@@ -31,7 +31,10 @@ function Contact() {
         </p>
         <p className="py-2">
           <span className="font-bold ">Phone : </span>
-          <a href="#" className="text-white">
+          <a
+            href={`tel:${config.phone}`}
+            className="underline hover:text-[#E5DFF0] text-white"
+          >
             {config.phone}
           </a>
         </p>
