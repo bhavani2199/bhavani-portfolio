@@ -31,7 +31,9 @@ function Contact() {
         </p>
         <p className="py-2">
           <span className="font-bold ">Phone : </span>
-          <a className="text-white">{config.phone}</a>
+          <a href="#" className="text-white">
+            {config.phone}
+          </a>
         </p>
       </div>
     </section>
