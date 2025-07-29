@@ -5,6 +5,7 @@ import netflixclone from "../assets/netflix clone.jpg";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
+
 function Projects() {
   const config = {
     projects: [
@@ -40,18 +41,23 @@ function Projects() {
   //   ],
   // };
 
+
+
   return (
-    <section className="flex flex-col py-10 px-5 bg-[#F3EFF5]">
+    <section
+      id="projects"
+      className="flex flex-col pt-10 pb-20 px-16 bg-[#F3EFF5]"
+    >
       <div className="px-5 mb-10">
-        <h1 className="text-4xl font-bold border-b-4 w-[140px] border-[#9983AF] ">
+        <h1 className="text-4xl font-bold border-b-4 w-[140px] border-[#572b86] ">
           Projects
         </h1>
         <p className="mt-5">
           Here is my project. I have built this with React, JavaScript, HTML and
           CSS. Check them out.
         </p>
-        <p></p>
       </div>
+
       {/* <Slider {...settings}> */}
       {config.projects.map((project, index) => (
         <div key={index} className="px-5">
@@ -78,6 +84,7 @@ function Projects() {
         </div>
       ))}
       {/* </Slider> */}
+
     </section>
   );
 }
