@@ -4,7 +4,7 @@ function Footer() {
   const config = {
     social: {
       github: "https://github.com/bhavani2199",
-      linkedin: "https://www.linkedin.com/in/bhavaniambrose",
+      linkedin: "https://www.linkedin.com/in/bhavani-ambrose/",
     },
   };
 
